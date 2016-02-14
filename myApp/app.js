@@ -6,5 +6,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Express.js listening on port 3000! Visit http://192.168.33.10:3000 in your browser');
 });
