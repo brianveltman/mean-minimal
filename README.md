@@ -2,6 +2,12 @@
 
 A minimal MEAN stack on Ubuntu 14.04.3.
 
+<H2>Requirements</h2>
+Install both before installing the MEAN stack<br>
+- Virtualbox https://www.virtualbox.org/wiki/Downloads<br>
+- Vagrant https://www.vagrantup.com/downloads.html<br>
+
+
 <h2>How to install</h2>
 <ul>
 <li>Open the command line or terminal</li>
