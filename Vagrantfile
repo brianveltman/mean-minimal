@@ -70,5 +70,5 @@ Vagrant.configure(2) do |config|
   # SHELL
 
 config.vm.provision "shell",
-    inline: "cd /vagrant/myApp && sudo npm install supervisor -g && npm install --no-bin-links && supervisor app.js"
+    inline: "cd /vagrant/myApp && sudo npm install supervisor -g && npm install --no-bin-links && supervisor server.js"
 end
