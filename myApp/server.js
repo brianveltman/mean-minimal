@@ -1,10 +1,10 @@
-var express = require('express');
-var app = express();
+var http = require('http');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+http.createServer(function (request, response) {
+  response.writeHead(200, {
+  	'Content-Type': 'text/plain'
+  });
+  response.end('Hello World!\n');
+}).listen(3000);
 
-app.listen(3000, function () {
-  console.log('Express.js listening on port 3000! Visit http://192.168.33.10:3000 in your browser');
-});
+console.log('Server running at http://192.168.33.10:3000/');
