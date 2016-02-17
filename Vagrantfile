@@ -68,6 +68,10 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
+  
+config.trigger.after :up do
+    run_remote "cd /vagrant/myApp && supervisor server.js"
+end
 
 config.vm.provision "shell",
     inline: "cd /vagrant/myApp && sudo npm install supervisor -g && npm install --no-bin-links && supervisor server.js"
