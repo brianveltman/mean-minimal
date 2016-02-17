@@ -3,7 +3,7 @@
 A minimal MEAN stack on Ubuntu 14.04.3.
 
 <H2>Requirements</h2>
-Install both before installing the MEAN stack<br>
+Install all before running 'vagrant up'.<br>
 - Virtualbox https://www.virtualbox.org/wiki/Downloads<br>
 - Vagrant https://www.vagrantup.com/downloads.html<br>
 - Vagrant triggers <pre>vagrant plugin install vagrant-triggers</pre>
